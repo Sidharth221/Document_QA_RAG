@@ -14,7 +14,7 @@ import os
 load_dotenv()
 
 ## load the GROQ And OpenAI API KEY 
-groq_api_key=os.getenv('GROQ_API_KEY')
+groq_api_key=st.secrets["GROQ_API_KEY"]
 os.environ["GOOGLE_API_KEY"]=os.getenv("GOOGLE_API_KEY")
 
 st.title("Gemma Model Document Q&A")
